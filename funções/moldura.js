@@ -1,5 +1,19 @@
-![](https://brandslogos.com/wp-content/uploads/images/large/nodejs-logo-black-and-white.png)
+//Desenha uma moldura na frase  
 
+const readline = require('readline-sync');
 
+const ch = "█"
 
+function barra(qtde){
+    
+    for(let i=0; i<qtde+4; i++){
+        process.stdout.write(ch)
+     }
+}
 
+const frase = readline.question("\nFrase? ");
+
+barra(frase.length);
+console.log()
+console.log(ch, frase, ch);
+barra(frase.length)
